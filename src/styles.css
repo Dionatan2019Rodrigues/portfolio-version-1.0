@@ -150,7 +150,7 @@ section.about .container-top {
   flex-direction: column;
   gap: 30px;
 }
-.about .container-top #left .paragraph {
+.paragraph {
   color: var(--beige-clean);
   text-align: justify;
   text-indent: 2em;
@@ -219,8 +219,8 @@ section.about .container-top {
 }
 .container-flip {
   position: relative;
-  width: 30vw;
-  height: 80vh;
+  width: 25vw;
+  height: 70vh;
 }
 .container-flip:hover .flip {
   transform: rotateY(180deg);
@@ -229,9 +229,8 @@ section.about .container-top {
   position: absolute;
   width: 100%;
   height: 100%;
-  cursor: pointer;
   transform-style: preserve-3d;
-  transition: .5s;
+  transition: 0.5s;
 }
 .front,
 .back {
@@ -246,8 +245,71 @@ section.about .container-top {
   background-image: url(assets/doguinho.jpg);
   background-size: cover;
   background-position: center;
+
+  padding: 20px 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.front .icons-flip {
+  align-self: flex-start;
+  margin-left: 20px;
+  font-size: 28px;
+}
+.front .icons-flip i {
+  padding: 5px;
+  background-color: var(--gray-dark);
+  color: var(--beige-medium);
+  border-radius: 5px;
+}
+.front p {
+  font-size: 16px;
+  background-color: var(--gray-dark);
+  color: var(--beige-medium);
+  padding: 10px 30px;
+  border-radius: 20px;
 }
 .back {
-  background-color: aqua;
+  background-color: transparent;
   transform: rotateY(180deg);
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.back h4{
+  color: var(--beige-medium);
+  font-size: 1.3rem;
+}
+.back .data{
+  color: var(--beige-normal);
+  font-style: italic;
+}
+.buttons-back{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.buttons-back button{
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--beige-medium);
+  color: var(--gray-dark);
+  border: none;
+  width: 45%;
+  cursor: pointer;
+
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.buttons-back button i{
+  color: var(--gray-dark);
 }
