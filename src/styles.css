@@ -23,10 +23,6 @@
 html {
   font-family: "Roboto", sans-serif;
 }
-section {
-  width: 100%;
-  height: 100vh;
-}
 /* HEADER ---------------------------------------------- */
 .container {
   max-width: 1280px;
@@ -84,6 +80,8 @@ header button {
 }
 /* SECTION HOME ----------------------------------------*/
 section.home {
+  width: 100%;
+  height: 100vh;
   background-image: url(assets/fundo-home.jpg);
   background-position: center;
   background-size: cover;
@@ -140,7 +138,7 @@ section.about .container-top {
   justify-content: center;
   align-items: center;
   padding: 20px 8%;
-  height: 100vh;
+  height: 85vh;
   gap: 20px;
   background-image: linear-gradient(to left, var(--preto) 1%, var(--gray-dark));
 }
@@ -185,11 +183,71 @@ section.about .container-top {
   gap: 20px;
 }
 
-.container-bottom{
+.container-bottom {
+  background-image: linear-gradient(to left, var(--preto) 1%, white);
+  height: 15vh;
+}
+.about .container-bottom .bold i,
+.about .container-bottom .light i {
+  color: var(--beige-clean);
+  width: 16vw;
+  padding: 0 2vw;
+}
+.bold,
+.light {
+  text-align: center;
+  background-color: red;
+}
+/*  SECTION PROJECTS  -----------------------------------*/
+.container-projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: linear-gradient(to left, var(--preto) 1%, var(--gray-dark));
 }
-.about .container-bottom .bold,
-.about .container-bottom .light {
+.container-projects h3 {
   color: var(--beige-clean);
-  width: 300px;
+  padding: 80px 0px 40px 0px;
+  font-size: 2rem;
+}
+.projects {
+  padding: 20px 8%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+.container-flip {
+  position: relative;
+  width: 30vw;
+  height: 80vh;
+}
+.container-flip:hover .flip {
+  transform: rotateY(180deg);
+}
+.flip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: .5s;
+}
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px var(--preto);
+  backface-visibility: hidden;
+}
+.front {
+  background-image: url(assets/doguinho.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.back {
+  background-color: aqua;
+  transform: rotateY(180deg);
 }
