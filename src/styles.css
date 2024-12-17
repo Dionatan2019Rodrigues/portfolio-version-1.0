@@ -217,7 +217,7 @@ section.about .container-top {
   font-size: 2rem;
 }
 .projects {
-  padding: 20px 8%;
+  padding: 20px 8% 80px 8%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
@@ -286,21 +286,21 @@ section.about .container-top {
   justify-content: space-around;
   gap: 20px;
 }
-.back h4{
+.back h4 {
   color: var(--beige-medium);
   font-size: 1.3rem;
 }
-.back .data{
+.back .data {
   color: var(--beige-normal);
   font-style: italic;
 }
-.buttons-back{
+.buttons-back {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.buttons-back button{
+.buttons-back button {
   padding: 5px 10px;
   border-radius: 5px;
   background-color: var(--beige-medium);
@@ -315,6 +315,22 @@ section.about .container-top {
   justify-content: center;
   gap: 8px;
 }
-.buttons-back button i{
+.buttons-back button i {
   color: var(--gray-dark);
+}
+/*  FOOTER  -----------------------------------*/
+footer{
+  padding: 30px 8%;
+  background-image: linear-gradient(to left, var(--gray-dark) 1%, var(--gray-dark));
+  color: var(--beige-clean);
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts{
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  font-size: 24px;
 }
