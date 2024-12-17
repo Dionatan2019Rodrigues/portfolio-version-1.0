@@ -107,12 +107,12 @@ section.home {
 .overlay h1 {
   color: var(--beige-clean);
   font-size: 3.5em;
-  font-weight: 600;
+  font-weight: lighter;
 }
 .overlay h2 {
   color: var(--beige-clean);
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: lighter;
 }
 .buttons {
   display: flex;
@@ -183,20 +183,25 @@ section.about .container-top {
   gap: 20px;
 }
 
-.container-bottom {
-  background-image: linear-gradient(to left, var(--preto) 1%, white);
+.container-skills {
+  background-image: linear-gradient(
+    to left,
+    var(--preto) 1%,
+    var(--gray-dark)
+  );
   height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.about .container-bottom .bold i,
-.about .container-bottom .light i {
+.about .container-skills .skill i {
   color: var(--beige-clean);
   width: 16vw;
   padding: 0 2vw;
 }
-.bold,
-.light {
+.skill {
   text-align: center;
-  background-color: red;
+  font-size: 36px;
 }
 /*  SECTION PROJECTS  -----------------------------------*/
 .container-projects {
