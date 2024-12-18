@@ -51,13 +51,11 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
+  transition: 1s;
 }
 header p {
   color: var(--beige-clean);
   font-weight: bold;
-}
-header p span {
-  color: var(--beige-medium);
 }
 nav {
   display: flex;
@@ -77,6 +75,23 @@ header button {
   font-weight: 700;
   cursor: pointer;
   transition: 0.2s;
+}
+header.rolagem {
+  background-color: var(--beige-normal);
+  padding: 20px 8%;
+}
+header.rolagem p{
+  color: var(--gray-dark);
+}
+header.rolagem .logo i{
+  color: var(--gray-dark);
+}
+header.rolagem a {
+  color: var(--gray-dark);
+}
+header.rolagem button{
+  background-color: var(--gray-dark);
+  color: var(--beige-medium);
 }
 /* SECTION HOME ----------------------------------------*/
 section.home {
@@ -187,11 +202,7 @@ section.about .container-top {
 }
 
 .container-skills {
-  background-image: linear-gradient(
-    to left,
-    var(--preto) 1%,
-    var(--gray-dark)
-  );
+  background-image: linear-gradient(to left, var(--preto) 1%, var(--gray-dark));
   height: 15vh;
   display: flex;
   justify-content: center;
@@ -322,9 +333,13 @@ section.about .container-top {
   color: var(--gray-dark);
 }
 /*  FOOTER  -----------------------------------*/
-footer{
+footer {
   padding: 30px 8%;
-  background-image: linear-gradient(to left, var(--gray-dark) 1%, var(--gray-dark));
+  background-image: linear-gradient(
+    to left,
+    var(--gray-dark) 1%,
+    var(--gray-dark)
+  );
   color: var(--beige-clean);
   font-size: 18px;
   display: flex;
@@ -337,9 +352,9 @@ footer{
   justify-content: space-between;
   font-size: 24px;
 }
-.contacts p{
+.contacts p {
   font-size: 20px;
 }
-.contacts a{
+.contacts a {
   color: var(--beige-clean);
 }
