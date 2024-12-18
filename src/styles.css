@@ -80,16 +80,16 @@ header.rolagem {
   background-color: var(--beige-normal);
   padding: 20px 8%;
 }
-header.rolagem p{
+header.rolagem p {
   color: var(--gray-dark);
 }
-header.rolagem .logo i{
+header.rolagem .logo i {
   color: var(--gray-dark);
 }
 header.rolagem a {
   color: var(--gray-dark);
 }
-header.rolagem button{
+header.rolagem button {
   background-color: var(--gray-dark);
   color: var(--beige-medium);
 }
