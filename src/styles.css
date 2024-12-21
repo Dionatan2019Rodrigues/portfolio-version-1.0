@@ -64,7 +64,14 @@ nav {
 }
 nav a {
   text-decoration: none;
+  padding: 5px;
   color: var(--beige-clean);
+  border: 2px solid transparent;
+}
+nav a:hover {
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid var(--beige-clean);
 }
 header button {
   padding: 10px;
@@ -75,6 +82,11 @@ header button {
   font-weight: 700;
   cursor: pointer;
   transition: 0.2s;
+  margin: 5px;
+}
+header button:hover{
+  padding: 15px;
+  margin: 0px;
 }
 header.rolagem {
   background-color: var(--beige-normal);
@@ -88,6 +100,10 @@ header.rolagem .logo i {
 }
 header.rolagem a {
   color: var(--gray-dark);
+}
+header.rolagem a:hover {
+  color: var(--gray-dark);
+  border-color: var(--gray-dark);
 }
 header.rolagem button {
   background-color: var(--gray-dark);
