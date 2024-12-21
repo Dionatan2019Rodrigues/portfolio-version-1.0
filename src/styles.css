@@ -22,6 +22,7 @@
 }
 html {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 /* HEADER ---------------------------------------------- */
 .container {
@@ -302,7 +303,7 @@ section.about .container-top {
 }
 .container-flip {
   position: relative;
-  width: 25vw;
+  width: 30vw;
   height: 70vh;
 }
 .container-flip:hover .flip {
