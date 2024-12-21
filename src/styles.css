@@ -34,6 +34,9 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+.flex a {
+  text-decoration: none;
+}
 .flex i,
 .flex p {
   color: var(--beige-clean);
@@ -64,13 +67,11 @@ nav {
   font-size: 1.2rem;
 }
 nav a {
-  text-decoration: none;
   padding: 5px;
   color: var(--beige-clean);
   border: 2px solid transparent;
 }
 nav a:hover {
-  text-decoration: none;
   border-radius: 5px;
   border: 2px solid var(--beige-clean);
 }
