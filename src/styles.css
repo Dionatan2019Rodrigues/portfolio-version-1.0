@@ -23,6 +23,7 @@
 html {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 /* HEADER ---------------------------------------------- */
 .container {
@@ -86,13 +87,13 @@ header button {
   transition: 0.2s;
   margin: 5px;
 }
-header button:hover{
+header button:hover {
   padding: 15px;
   margin: 0px;
 }
 header.rolagem {
   background-color: var(--beige-normal);
-  padding: 20px 8%;
+  padding: 5px 8%;
 }
 header.rolagem p {
   color: var(--gray-dark);
@@ -161,37 +162,59 @@ section.home {
   height: 100%;
   border-left: 2px solid var(--beige-medium);
   right: -10px;
-  animation: cursor .8s infinite, digita 20s steps(15) infinite;
+  animation: cursor 0.8s infinite, digita 20s steps(15) infinite;
   width: calc(100% + 10px);
   background-color: var(--gray-dark);
 }
 @keyframes digita {
-  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
     width: 0;
   }
-  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
     width: calc(100% + 10px);
   }
 }
 @keyframes cursor {
-  0%{
+  0% {
     border-left: 2px solid var(--gray-dark);
   }
 }
 @keyframes palavras-animadas {
-  0%,20%{
+  0%,
+  20% {
     content: "Freelancer";
   }
-  21%,40%{
+  21%,
+  40% {
     content: "Criativo";
   }
-  41%,60%{
+  41%,
+  60% {
     content: "Web";
   }
-  61%,80%{
+  61%,
+  80% {
     content: "FullStack";
   }
-  81%,100%{
+  81%,
+  100% {
     content: "Proativo";
   }
 }
@@ -229,7 +252,7 @@ section.about .container-top {
 .about .container-top img {
   width: 400px;
 }
-.about .container-top #left {
+#left {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -239,14 +262,14 @@ section.about .container-top {
   text-align: justify;
   text-indent: 2em;
 }
-.about .container-top #left span {
+#left span {
   color: var(--beige-medium);
 }
-.about .container-top #left h3 {
+#left h3 {
   color: var(--beige-clean);
   font-size: 2rem;
 }
-.about .container-top .card {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -260,7 +283,7 @@ section.about .container-top {
   height: 150px;
   color: var(--beige-clean);
 }
-.about .container-top #experience {
+#experience {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -286,7 +309,7 @@ section.about .container-top {
   font-size: 36px;
 }
 @keyframes slide {
-  from{
+  from {
     transform: translateX(0);
   }
   to {
@@ -434,3 +457,33 @@ footer {
 .contacts a {
   color: var(--beige-clean);
 }
+/*  ANIMAÇÕES DE SCROOL  ---------------------*/
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+.hidden-right {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 1s;
+  transform: translateX(100%)
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 2s;
+  transform: translateX(0);
+}
+.experience :nth-child(1) {
+  transition-delay: 0ms;
+}
+.experience :nth-child(2) {
+  transition-delay: 100ms;
+}
+.experience :nth-child(3) {
+  transition-delay: 200ms;
+}
+
+
