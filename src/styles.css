@@ -266,22 +266,32 @@ section.about .container-top {
   justify-content: center;
   gap: 20px;
 }
-
 .container-skills {
   background-image: linear-gradient(to left, var(--preto) 1%, var(--gray-dark));
   height: 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.about .container-skills .skill i {
-  color: var(--beige-clean);
-  width: 16vw;
-  padding: 0 2vw;
+.line-skills {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+  width: 100vw;
+}
+.line-skills .espacamento {
+  display: flex;
+  justify-content: space-around;
 }
 .skill {
-  text-align: center;
+  color: var(--beige-clean);
   font-size: 36px;
+}
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 /*  SECTION PROJECTS  -----------------------------------*/
 .container-projects {
