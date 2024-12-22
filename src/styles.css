@@ -360,10 +360,6 @@ section.about .container-top {
   backface-visibility: hidden;
 }
 .front {
-  background-image: url(assets/doguinho.jpg);
-  background-size: cover;
-  background-position: center;
-
   padding: 20px 0px;
 
   display: flex;
@@ -371,9 +367,34 @@ section.about .container-top {
   align-items: center;
   justify-content: space-between;
 }
+.project-todo{
+  background-image: url(assets/projects/p-to-do-list.png);
+  background-size: cover;
+}
+.project-cordel{
+  background-image: url(assets/projects/p-cordel.png);
+  background-size: cover;
+}
+.project-android{
+  background-image: url(assets/projects/p-android.png);
+  background-size: cover;
+}
+.project-social{
+  background-image: url(assets/projects/p-social.png);
+  background-size: cover;
+}
+.project-login{
+  background-image: url(assets/projects/p-login.png);
+  background-size: cover;
+  background-position: center;
+}
+.project-portfolio{
+  background-image: url(assets/projects/p-portfolio.png);
+  background-size: cover;
+}
 .front .icons-flip {
-  align-self: flex-start;
-  margin-left: 20px;
+  align-self: flex-end;
+  margin-right: 20px;
   font-size: 28px;
 }
 .front .icons-flip i {
@@ -381,6 +402,7 @@ section.about .container-top {
   background-color: var(--gray-dark);
   color: var(--beige-medium);
   border-radius: 5px;
+  border: solid 1px var(--beige-medium);
 }
 .front p {
   font-size: 16px;
@@ -388,6 +410,7 @@ section.about .container-top {
   color: var(--beige-medium);
   padding: 10px 30px;
   border-radius: 20px;
+  border: solid 1px var(--beige-medium);
 }
 .back {
   background-color: transparent;
