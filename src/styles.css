@@ -26,11 +26,11 @@ html {
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
   background-color: var(--gray-dark);
 }
 ::-webkit-scrollbar-thumb {
-  width: 10px;
+  width: 8px;
   background-color: var(--beige-medium);
   border-radius: 10px;
 }
@@ -97,8 +97,8 @@ header button {
   margin: 5px;
 }
 header button:hover {
-  padding: 15px;
-  margin: 0px;
+  padding: 12px;
+  margin: 3px;
 }
 header.rolagem {
   background-color: var(--beige-normal);
