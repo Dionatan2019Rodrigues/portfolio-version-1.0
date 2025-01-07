@@ -253,13 +253,13 @@ section.about .container-top {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 8%;
+  padding: 0px 8%;
   height: 85vh;
-  gap: 20px;
+  gap: 80px;
   background-image: linear-gradient(to left, var(--preto) 1%, var(--gray-dark));
 }
-.about .container-top img {
-  width: 400px;
+.about #right img {
+  width: 350px;
 }
 #left {
   display: flex;
