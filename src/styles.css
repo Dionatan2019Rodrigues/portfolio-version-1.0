@@ -367,28 +367,28 @@ section.about .container-top {
   align-items: center;
   justify-content: space-between;
 }
-.project-todo{
+.project-todo {
   background-image: url(assets/projects/p-to-do-list.png);
   background-size: cover;
 }
-.project-cordel{
+.project-cordel {
   background-image: url(assets/projects/p-cordel.png);
   background-size: cover;
 }
-.project-android{
+.project-android {
   background-image: url(assets/projects/p-android.png);
   background-size: cover;
 }
-.project-social{
+.project-social {
   background-image: url(assets/projects/p-social.png);
   background-size: cover;
 }
-.project-login{
+.project-login {
   background-image: url(assets/projects/p-login.png);
   background-size: cover;
   background-position: center;
 }
-.project-portfolio{
+.project-portfolio {
   background-image: url(assets/projects/p-portfolio.png);
   background-size: cover;
 }
@@ -436,22 +436,26 @@ section.about .container-top {
   align-items: center;
   gap: 10px;
 }
-.buttons-back button {
+.buttons-back a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons-back a button {
   padding: 5px 10px;
-  border-radius: 5px;
   background-color: var(--beige-medium);
   color: var(--gray-dark);
+  border-radius: 5px;
   border: none;
-  width: 45%;
   cursor: pointer;
-
   font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
 }
-.buttons-back button i {
+.buttons-back a button i {
   color: var(--gray-dark);
 }
 /*  FOOTER  -----------------------------------*/
@@ -491,7 +495,7 @@ footer {
   opacity: 0;
   filter: blur(15px);
   transition: all 1s;
-  transform: translateX(100%)
+  transform: translateX(100%);
 }
 .show {
   opacity: 1;
@@ -508,5 +512,3 @@ footer {
 .experience :nth-child(3) {
   transition-delay: 200ms;
 }
-
-
