@@ -10,8 +10,10 @@ utilizando
 
 portfólio tasks list:
 
-( ) project paragraphs
-( ) button click view project and code
+(x) project paragraphs
+(x) button click view project and code
 ( ) button whatsapp
 ( ) image about me
 ( ) mobile version
+( ) scrool bar
+( ) put to-do-list on server, and button view project
