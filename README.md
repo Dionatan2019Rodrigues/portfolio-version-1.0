@@ -12,8 +12,8 @@ portfólio tasks list:
 
 (x) project paragraphs
 (x) button click view project and code
-( ) button whatsapp
+(x) button whatsapp
 ( ) image about me
 ( ) mobile version
-( ) scrool bar
+(x) scrool bar
 ( ) put to-do-list on server, and button view project
