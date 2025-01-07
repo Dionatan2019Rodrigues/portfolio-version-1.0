@@ -474,7 +474,7 @@ footer {
 }
 .contacts {
   display: flex;
-  width: 260px;
+  width: 100px;
   justify-content: space-between;
   font-size: 24px;
 }
