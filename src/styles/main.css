@@ -35,17 +35,27 @@ html {
   border-radius: 10px;
 }
 /* HEADER ---------------------------------------------- */
-.flex {
+header {
   width: 100%;
+  max-width: 100%;
+  padding: 60px 61px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: 1s;
+}
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.flex a {
+header nav a {
   text-decoration: none;
 }
-.flex i,
-.flex p {
+header nav i,
+header nav p {
   color: var(--beige-clean);
   font-size: 1.7rem;
 }
@@ -54,57 +64,34 @@ html {
   align-items: center;
   gap: 5px;
 }
-header {
-  width: 100%;
-  padding: 60px 8%;
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  transition: 1s;
-}
-header p {
+header nav p {
   color: var(--beige-clean);
   font-weight: bold;
 }
-nav {
+nav ul {
   display: flex;
   gap: 70px;
   font-size: 1.2rem;
+  list-style: none;
 }
 nav a {
   padding: 5px;
   color: var(--beige-clean);
   border: 2px solid transparent;
 }
+.mobile-menu-icon,
+.mobile-menu {
+  display: none;
+}
 nav a:hover {
   border-radius: 5px;
   border: 2px solid var(--beige-clean);
 }
-header button {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: var(--beige-medium);
-  color: var(--gray-dark);
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.2s;
-  margin: 5px;
-}
-header button:hover {
-  padding: 12px;
-  margin: 3px;
-}
 header.rolagem {
   background-color: var(--beige-normal);
-  padding: 5px 8%;
+  padding: 5px 61px;
 }
-header.rolagem p {
-  color: var(--gray-dark);
-}
-header.rolagem .logo i {
+header.rolagem p, header.rolagem .logo i{
   color: var(--gray-dark);
 }
 header.rolagem a {
@@ -113,10 +100,6 @@ header.rolagem a {
 header.rolagem a:hover {
   color: var(--gray-dark);
   border-color: var(--gray-dark);
-}
-header.rolagem button {
-  background-color: var(--gray-dark);
-  color: var(--beige-medium);
 }
 /* SECTION HOME ----------------------------------------*/
 section.home {
@@ -207,11 +190,11 @@ section.home {
   20% {
     content: "Freelancer";
   }
-  21%,
+  61%,
   40% {
     content: "Criativo";
   }
-  41%,
+  61%,
   60% {
     content: "Web";
   }
@@ -250,7 +233,7 @@ section.about .container-top {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 8%;
+  padding: 0px 61px;
   height: 85vh;
   gap: 80px;
   background-image: linear-gradient(to left, var(--preto) 1%, var(--gray-dark));
@@ -336,7 +319,7 @@ section.about .container-top {
   font-size: 2rem;
 }
 .projects {
-  padding: 20px 8% 80px 8%;
+  padding: 20px 61px 80px 61px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
@@ -457,7 +440,7 @@ section.about .container-top {
 }
 /*  FOOTER  -----------------------------------*/
 footer {
-  padding: 30px 8%;
+  padding: 30px 61px;
   background-image: linear-gradient(
     to left,
     var(--gray-dark) 1%,
@@ -509,3 +492,4 @@ footer {
 .experience :nth-child(3) {
   transition-delay: 200ms;
 }
+

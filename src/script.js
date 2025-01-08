@@ -25,3 +25,21 @@ const elem_right = document.querySelectorAll(".hidden-right");
 elem_right.forEach((element) => {
   myObserver.observe(element);
 });
+
+//Função de abrir menu no mobile
+function menuShow() {
+  let menuMobile = document.querySelector(".mobile-menu");
+  let menuIcon = document.querySelector("#menu-icon");
+
+  if (menuMobile.classList.contains("open")) {
+    menuMobile.classList.remove("open");
+
+    menuIcon.classList.remove("fa-x");
+    menuIcon.classList.add("fa-bars");
+  } else {
+    menuMobile.classList.add("open");
+    
+    menuIcon.classList.remove("fa-bars");
+    menuIcon.classList.add("fa-x");
+  }
+}

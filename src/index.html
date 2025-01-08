@@ -4,30 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/media-queries.css">
+    <link rel="stylesheet" href="styles/media-queries.css" />
     <!-- ABA DO NAVEGADOR -->
     <title>Dionatan Rodrigues</title>
-    <link rel="shortcut icon" href="assets/dev-brands-solid.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/dev-brands-solid.svg"
+      type="image/x-icon"
+    />
     <!-- FA ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
     <header id="header">
-        <div class="flex">
-          <a href="#home">
-            <div class="logo">
-              <p>Dionatan |</p>
-              <i class="fa-brands fa-dev"></i>
-            </div>
-          </a>
-          <nav>
-              <a href="#home">INÍCIO</a>
-              <a href="#about">SOBRE</a>
-              <a href="#container-projects">PROJETOS</a>
-            </ul>
-          </nav>
-          <a href="#footer"><button>Contato</button></a>
+      <nav>
+        <a href="#home">
+          <div class="logo">
+            <p>Dionatan |</p>
+            <i class="fa-brands fa-dev"></i>
+          </div>
+        </a>
+        <ul>
+          <li><a href="#home">INÍCIO</a></li>
+          <li><a href="#about">SOBRE</a></li>
+          <li><a href="#container-projects">PROJETOS</a></li>
+          <li><a href="#footer">CONTATO</a></li>
+        </ul>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()"><i id="menu-icon" class="fa-solid fa-bars"></i></button>
         </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#home" onclick="menuShow()">INÍCIO</a></li>
+          <li><a href="#about" onclick="menuShow()">SOBRE</a></li>
+          <li><a href="#container-projects" onclick="menuShow()">PROJETOS</a></li>
+          <li><a href="#footer" onclick="menuShow()">CONTATO</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -40,23 +57,40 @@
               <a href="resources/curriculo-dionatan.pdf" download="">
                 <button><i class="fa-solid fa-download"></i>Curriculo</button>
               </a>
-              <a href="https://www.linkedin.com/in/dionatan-eduardo-correa-rodrigues-76b507255/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/dionatan-eduardo-correa-rodrigues-76b507255/"
+                target="_blank"
+              >
                 <button><i class="fa-brands fa-linkedin"></i>Linkedin</button>
               </a>
             </div>
           </div>
         </div>
       </section>
-      
+
       <section class="about" id="about">
         <div class="container-top">
           <div id="left" class="hidden">
             <h3>Olá, me chamo Dionatan</h3>
             <div>
-              <p class="paragraph">Possuo experiência em <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, <span>React</span>, <span>Node.js</span> e <span>Git</span>, adquiri essa base construindo aplicações web. Minha vivência em diversos projetos, me permitiu desenvolver habilidades em <span>resolução de problemas</span>, <span>trabalho em equipe</span> e <span>gestão de projetos</span>. Sou um profissional <span>proativo</span>, sempre buscando novas tecnologias e aprimorando meus conhecimentos.
+              <p class="paragraph">
+                Possuo experiência em <span>HTML</span>, <span>CSS</span>,
+                <span>JavaScript</span>, <span>React</span>,
+                <span>Node.js</span> e <span>Git</span>, adquiri essa base
+                construindo aplicações web. Minha vivência em diversos projetos,
+                me permitiu desenvolver habilidades em
+                <span>resolução de problemas</span>,
+                <span>trabalho em equipe</span> e
+                <span>gestão de projetos</span>. Sou um profissional
+                <span>proativo</span>, sempre buscando novas tecnologias e
+                aprimorando meus conhecimentos.
               </p>
               <p class="paragraph">
-                Obtive também experiência em um ambiente dinâmico como entregador de lanches, me proporcionando <span>resiliência</span>, <span>organização</span> e capacidade de <span>lidar com prazos</span>, qualidades que aplico no desenvolvimento de software.
+                Obtive também experiência em um ambiente dinâmico como
+                entregador de lanches, me proporcionando
+                <span>resiliência</span>, <span>organização</span> e capacidade
+                de <span>lidar com prazos</span>, qualidades que aplico no
+                desenvolvimento de software.
               </p>
             </div>
             <div id="experience" class="experience">
@@ -74,14 +108,16 @@
               </div>
               <div class="hidden">
                 <div class="card">
-                  <i class="fa-solid fa-screwdriver-wrench"> a t u a l m e n t e</i>
+                  <i class="fa-solid fa-screwdriver-wrench">
+                    a t u a l m e n t e</i
+                  >
                   <p>Diretor de Projetos CompAct Jr</p>
                 </div>
               </div>
             </div>
           </div>
           <div id="right" class="hidden-right">
-            <img src="assets/profile-pic.png" alt="Dionatan">
+            <img src="assets/profile-pic.png" alt="Dionatan" />
           </div>
         </div>
         <div class="container-skills">
@@ -97,7 +133,7 @@
           </div>
         </div>
       </section>
-      
+
       <section class="container-projects" id="container-projects">
         <h3>Projetos</h3>
         <div class="projects">
@@ -116,15 +152,29 @@
                   <h4>ToDo List</h4>
                   <p class="data">início(18.08.2024) - fim(23.08.2024)</p>
                 </div>
-                <p class="paragraph">Este projeto tem como objetivo facilitar o usuário na hora de anotar suas tarefas, podendo adicionar uma tarefa, deletar uma tarefa, marcar como realizada ou visualizar mais detalhes. O projeto é integrado a uma API, utiliza de Hooks no React e conta também com o uso de React Router. Foi meu primeiro desenvolvimento utilizando a tecnologia e pude compreender mais sobre o tema.</p>
+                <p class="paragraph">
+                  Este projeto tem como objetivo facilitar o usuário na hora de
+                  anotar suas tarefas, podendo adicionar uma tarefa, deletar uma
+                  tarefa, marcar como realizada ou visualizar mais detalhes. O
+                  projeto é integrado a uma API, utiliza de Hooks no React e
+                  conta também com o uso de React Router. Foi meu primeiro
+                  desenvolvimento utilizando a tecnologia e pude compreender
+                  mais sobre o tema.
+                </p>
                 <div class="buttons-back">
-                  <a href="https://to-do-list-at-react.vercel.app/" target="_blank">
+                  <a
+                    href="https://to-do-list-at-react.vercel.app/"
+                    target="_blank"
+                  >
                     <button>
                       <i class="fa-solid fa-eye"></i>
                       <p>ver projeto</p>
                     </button>
                   </a>
-                  <a href="https://github.com/Dionatan2019Rodrigues/to-do-list-at-react" target="_blank">
+                  <a
+                    href="https://github.com/Dionatan2019Rodrigues/to-do-list-at-react"
+                    target="_blank"
+                  >
                     <button>
                       <i class="fa-solid fa-code"></i>
                       <p>ver código</p>
@@ -150,7 +200,12 @@
                   <h4>Portfólio</h4>
                   <p class="data">início(16.12.2024) - fim(00.00.2024)</p>
                 </div>
-                <p class="paragraph">Neste projeto tive como principal objetivo demonstrar minhas habilidades como desenvolvedor por meio da divulgação de outros projetos ja desenvolvidos por mim. Criei do zero, utilizando html, css e JavaScript. </p>
+                <p class="paragraph">
+                  Neste projeto tive como principal objetivo demonstrar minhas
+                  habilidades como desenvolvedor por meio da divulgação de
+                  outros projetos ja desenvolvidos por mim. Criei do zero,
+                  utilizando html, css e JavaScript.
+                </p>
                 <div class="buttons-back">
                   <a href="#" target="_blank">
                     <button>
@@ -158,7 +213,10 @@
                       <p>ver projeto</p>
                     </button>
                   </a>
-                  <a href="https://github.com/Dionatan2019Rodrigues/portfolio-version-1.0/" target="_blank">
+                  <a
+                    href="https://github.com/Dionatan2019Rodrigues/portfolio-version-1.0/"
+                    target="_blank"
+                  >
                     <button>
                       <i class="fa-solid fa-code"></i>
                       <p>ver código</p>
@@ -182,15 +240,25 @@
                   <h4>Mascote do android</h4>
                   <p class="data">início e fim - (10.03.2023)</p>
                 </div>
-                <p class="paragraph">Este foi meu primeiro projeto utilizando html e css, onde pude por em prática meus conhecimentos da semântica do html5, uso de fontes e variaveis em css.</p>
+                <p class="paragraph">
+                  Este foi meu primeiro projeto utilizando html e css, onde pude
+                  por em prática meus conhecimentos da semântica do html5, uso
+                  de fontes e variaveis em css.
+                </p>
                 <div class="buttons-back">
-                  <a href="https://dionatan2019rodrigues.github.io/projeto-android/" target="_blank">
+                  <a
+                    href="https://dionatan2019rodrigues.github.io/projeto-android/"
+                    target="_blank"
+                  >
                     <button>
                       <i class="fa-solid fa-eye"></i>
                       <p>ver projeto</p>
                     </button>
                   </a>
-                  <a href="https://github.com/Dionatan2019Rodrigues/projeto-android/" target="_blank">
+                  <a
+                    href="https://github.com/Dionatan2019Rodrigues/projeto-android/"
+                    target="_blank"
+                  >
                     <button>
                       <i class="fa-solid fa-code"></i>
                       <p>ver código</p>
@@ -214,15 +282,25 @@
                   <h4>Cordel Moderno</h4>
                   <p class="data">início e fim - (10.03.2023)</p>
                 </div>
-                <p class="paragraph">Meu segundo projeto utilizando html e css onde pude colocar em prática o efeito chamado de parallax além do que também a semântica do html5.</p>
+                <p class="paragraph">
+                  Meu segundo projeto utilizando html e css onde pude colocar em
+                  prática o efeito chamado de parallax além do que também a
+                  semântica do html5.
+                </p>
                 <div class="buttons-back">
-                  <a href="https://dionatan2019rodrigues.github.io/projeto-cordel/" target="_blank">
+                  <a
+                    href="https://dionatan2019rodrigues.github.io/projeto-cordel/"
+                    target="_blank"
+                  >
                     <button>
                       <i class="fa-solid fa-eye"></i>
                       <p>ver projeto</p>
                     </button>
                   </a>
-                  <a href="https://github.com/Dionatan2019Rodrigues/projeto-cordel/" target="_blank">
+                  <a
+                    href="https://github.com/Dionatan2019Rodrigues/projeto-cordel/"
+                    target="_blank"
+                  >
                     <button>
                       <i class="fa-solid fa-code"></i>
                       <p>ver código</p>
@@ -239,12 +317,19 @@
     <footer id="footer">
       <p class="hidden">&copy Desenvolvido por Dionatan</p>
       <div class="contacts hidden-right">
-        <a href="https://web.whatsapp.com/send?phone=55984268328" target="_blank">
+        <a
+          href="https://web.whatsapp.com/send?phone=55984268328"
+          target="_blank"
+        >
           <i class="fa-brands fa-whatsapp"></i>
         </a>
         <a href="https://github.com/Dionatan2019Rodrigues" target="_blank">
-          <i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/dionatan-eduardo-correa-rodrigues-76b507255/" target="_blank">
+          <i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/dionatan-eduardo-correa-rodrigues-76b507255/"
+          target="_blank"
+        >
           <i class="fa-brands fa-linkedin"></i>
         </a>
       </div>
