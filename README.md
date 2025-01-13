@@ -1,19 +1,34 @@
-# portfolio-version-1.0
+# Dionatan Rodrigues | Portfolio
 
-Minhas habilidades como dev
+### Imagem do Projeto
+<div style=" width: 100%; margin: 0 auto;">
+   <img style=" width: 100%; margin: 0 auto;" src="" alt="imagem do projeto">
+</div>
 
-utilizando
+### Sobre
+<p>
+    Este repositório contém o código-fonte do meu site pessoal de portfólio. É uma vitrine digital onde apresento minhas habilidades e projetos como desenvolvedor web. O site demonstra minha abordagem ao desenvolvimento web, focando em design responsivo.
+</p>
 
-    html
-    css
-    Fontawesome para icones
+### Tecnologias Utilizadas
+<p>
+    O site foi construído utilizando uma variedade de tecnologias e ferramentas modernas:
+</p>
 
-portfólio tasks list:
+- **HTML & CSS**: Estruturação e estilização responsiva do site.
+- **JavaScript**: Utilizado para criar interatividade e funcionalidades dinâmicas.
+- **FontAwesome**: Ícones estilizados e de fácil implementação.
+- **Git**: Utilizado no versionamento de todo projeto.
 
-(x) project paragraphs
-(x) button click view project and code
-(x) button whatsapp
-(x) image about me
-( ) mobile version
-(x) scrool bar
-(x) put to-do-list on server, and button view project
+### Links
+<p>
+    <strong>Site : </strong>
+    <a href="#" target="_blank" rel="external">Dionatan | DEV</a>
+</p>
+<p>
+   <strong>Linkedin : </strong>
+   <a href="https://www.linkedin.com/in/dionatan-eduardo-correa-rodrigues-76b507255/" target="_blank" rel="external">Dionatan Rodrigues</a>
+ </p>
+
+<p>Obrigado por visitar meu portfólio!</p>
+
