@@ -38,7 +38,7 @@ html {
 header {
   width: 100%;
   max-width: 100%;
-  padding: 60px 61px;
+  padding: 60px 8%;
   background-color: transparent;
   position: fixed;
   top: 0;
@@ -89,7 +89,7 @@ nav a:hover {
 }
 header.rolagem {
   background-color: var(--beige-normal);
-  padding: 5px 61px;
+  padding: 5px 8%;
 }
 header.rolagem p, header.rolagem .logo i{
   color: var(--gray-dark);
@@ -233,7 +233,7 @@ section.about .container-top {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 61px;
+  padding: 0px 8%;
   height: 85vh;
   gap: 80px;
   background-image: linear-gradient(to left, var(--preto) 1%, var(--gray-dark));
@@ -295,7 +295,7 @@ section.about .container-top {
 }
 .skill {
   color: var(--beige-clean);
-  font-size: 36px;
+  font-size: 3rem;
 }
 @keyframes slide {
   from {
@@ -319,15 +319,15 @@ section.about .container-top {
   font-size: 2rem;
 }
 .projects {
-  padding: 20px 61px 80px 61px;
+  padding: 20px 8% 80px 8%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
 }
 .container-flip {
   position: relative;
-  width: 30vw;
-  height: 70vh;
+  width: 40vw;
+  height: 80vh;
 }
 .container-flip:hover .flip {
   transform: rotateY(180deg);
@@ -440,7 +440,7 @@ section.about .container-top {
 }
 /*  FOOTER  -----------------------------------*/
 footer {
-  padding: 30px 61px;
+  padding: 30px 8%;
   background-image: linear-gradient(
     to left,
     var(--gray-dark) 1%,
