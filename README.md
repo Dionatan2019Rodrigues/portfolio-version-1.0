@@ -2,7 +2,7 @@
 
 ### Imagem do Projeto
 <div style=" width: 100%; margin: 0 auto;">
-   <img style=" width: 100%; margin: 0 auto;" src="" alt="imagem do projeto">
+   <img style=" width: 100%; margin: 0 auto;" src="assets/finish-portfolio.png" alt="imagem do projeto">
 </div>
 
 ### Sobre
@@ -23,11 +23,11 @@
 ### Links
 <p>
     <strong>Site : </strong>
-    <a href="https://dionatan2019rodrigues.github.io/portfolio-version-1.0/" target="_blank" rel="external">Dionatan | DEV</a>
+    <a href="https://dionatan-portfolio.vercel.app/" target="_blank" rel="external">Dionatan | DEV</a>
 </p>
 <p>
    <strong>Linkedin : </strong>
-   <a href="https://www.linkedin.com/in/dionatan-eduardo-correa-rodrigues-76b507255/" target="_blank" rel="external">Dionatan Rodrigues</a>
+   <a href="https://www.linkedin.com/in/dionatan-rodrigues-76b507255/" target="_blank" rel="external">Dionatan Rodrigues</a>
  </p>
 
 <p>Obrigado por visitar meu portfólio!</p>
