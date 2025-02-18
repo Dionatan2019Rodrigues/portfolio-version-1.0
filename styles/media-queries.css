@@ -11,7 +11,62 @@
   --preto: #0c0c0cfb;
 }
 /*  MEDIA QUERIES  --------------------------*/
-@media (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 767px) {
+  header nav i,
+  header nav p {
+    font-size: 1rem;
+  }
+  .overlay h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .overlay .txt-animado {
+    font-size: 1.3rem;
+  }
+   /*section about me*/
+   section.about { 
+    height: auto; 
+  }
+  .skill i {
+    font-size: 2.5rem;
+  }
+  #left h3 {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  #left {
+    font-size: .9rem;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px;
+  }
+  #experience {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+  }
+  .card {
+    width: 100%;
+    height: auto; 
+    font-size: .9rem;
+  }
+  img {
+    height: 20%;
+    width: auto;
+    max-width: 200px;
+  }
+  /*section projects*/
+  .container-projects {
+    height: auto;
+  }
+  .back p {
+    font-size: 0.8rem;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 992px) {
   header {
     background-color: var(--beige-normal);
     padding: 5px 21px;
@@ -21,7 +76,9 @@
     width: 100%;
     max-width: 100%;
   }
-  header .logo p, header .logo i, header .mobile-menu-icon i{
+  header .logo p,
+  header .logo i,
+  header .mobile-menu-icon i {
     color: var(--gray-dark);
   }
   header.rolagem i {
@@ -52,17 +109,31 @@
   }
   .mobile-menu a {
     text-decoration: none;
-    background-image: linear-gradient(
-      to left,
-      var(--gray-medium),
-      transparent,
-      var(--gray-medium)
-    );
+    background-color: var(--gray-medium);
     color: var(--beige-clean);
     padding: 10px 30px;
     border-radius: 50px;
   }
   .open {
     display: block;
+  }
+  /*section about me*/
+  section.about .container-top {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 8%;
+    gap: 40px;
+  }
+  /*section projects*/
+  .projects {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .container-flip {
+    width: 90vw;
+    height: 60vh;
+    max-width: 600px;
+    max-height: 500px;
   }
 }

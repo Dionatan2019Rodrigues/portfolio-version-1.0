@@ -34,6 +34,10 @@ html {
   background-color: var(--beige-medium);
   border-radius: 10px;
 }
+main { 
+  display: flex;
+  flex-direction: column; 
+}
 /* HEADER ---------------------------------------------- */
 header {
   width: 100%;
@@ -91,7 +95,8 @@ header.rolagem {
   background-color: var(--beige-normal);
   padding: 5px 8%;
 }
-header.rolagem p, header.rolagem .logo i{
+header.rolagem p,
+header.rolagem .logo i {
   color: var(--gray-dark);
 }
 header.rolagem a {
@@ -229,6 +234,9 @@ section.home {
   color: var(--gray-dark);
 }
 /*  SECTION ABOUT ME  -----------------------------------*/
+section.about {
+  height: auto;
+}
 section.about .container-top {
   display: flex;
   justify-content: center;
@@ -264,6 +272,7 @@ section.about .container-top {
   justify-content: center;
   text-align: center;
   gap: 30px;
+  padding: 10px;
 
   background-color: transparent;
   border: solid 1px var(--beige-normal);
@@ -280,7 +289,7 @@ section.about .container-top {
 }
 .container-skills {
   background-image: linear-gradient(to left, var(--preto) 1%, var(--gray-dark));
-  height: 15vh;
+  height: auto;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -328,6 +337,8 @@ section.about .container-top {
   position: relative;
   width: 40vw;
   height: 80vh;
+  max-width: 450px;
+  max-height: 600px;
 }
 .container-flip:hover .flip {
   transform: rotateY(180deg);
@@ -492,4 +503,3 @@ footer {
 .experience :nth-child(3) {
   transition-delay: 200ms;
 }
-
