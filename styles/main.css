@@ -383,6 +383,10 @@ section.about .container-top {
   background-image: url(../assets/projects/p-portfolio.png);
   background-size: cover;
 }
+.project-resort {
+  background-image: url(../assets/projects/p-resort.png);
+  background-size: cover;
+}
 .front .icons-flip {
   align-self: flex-end;
   margin-right: 20px;
@@ -463,6 +467,13 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.dev {
+  text-decoration: none;
+  color: var(--beige-medium);
+}
+.dev:hover {
+  text-decoration: underline;
+}
 .contacts {
   display: flex;
   width: 100px;
@@ -491,7 +502,7 @@ footer {
 .show {
   opacity: 1;
   filter: blur(0);
-  transition: all 2s;
+  transition: all 1s;
   transform: translateX(0);
 }
 .experience :nth-child(1) {

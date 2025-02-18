@@ -34,14 +34,18 @@
           <li><a href="#footer">CONTATO</a></li>
         </ul>
         <div class="mobile-menu-icon">
-          <button onclick="menuShow()"><i id="menu-icon" class="fa-solid fa-bars"></i></button>
+          <button onclick="menuShow()">
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+          </button>
         </div>
       </nav>
       <div class="mobile-menu">
         <ul>
           <li><a href="#home" onclick="menuShow()">INÍCIO</a></li>
           <li><a href="#about" onclick="menuShow()">SOBRE</a></li>
-          <li><a href="#container-projects" onclick="menuShow()">PROJETOS</a></li>
+          <li>
+            <a href="#container-projects" onclick="menuShow()">PROJETOS</a>
+          </li>
           <li><a href="#footer" onclick="menuShow()">CONTATO</a></li>
         </ul>
       </div>
@@ -58,7 +62,7 @@
                 <button><i class="fa-solid fa-download"></i>Curriculo</button>
               </a>
               <a
-                href="https://www.linkedin.com/in/dionatan-eduardo-correa-rodrigues-76b507255/"
+                href="https://www.linkedin.com/in/dionatan-rodrigues-76b507255/"
                 target="_blank"
               >
                 <button><i class="fa-brands fa-linkedin"></i>Linkedin</button>
@@ -186,6 +190,51 @@
           </div>
           <div class="container-flip hidden-right">
             <div class="flip">
+              <div class="front project-resort">
+                <div class="icons-flip">
+                  <i class="fa-regular fa-file-code"></i>
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-git-alt"></i>
+                </div>
+                <p>Saiba mais</p>
+              </div>
+              <div class="back">
+                <div class="top-back">
+                  <h4>Resorts</h4>
+                  <p class="data">início(04.02.2025) - fim(08.02.2025)</p>
+                </div>
+                <p class="paragraph">
+                  Este foi o meu primeiro projeto pessoal utilizando tailwind,
+                  no qual foi desenvolvido dentro da capacitação de iniciantes
+                  na empresa Compact jr. Trata-se da página home de um site para
+                  um hotel fictício. O sistema demonstra minha abordagem ao
+                  desenvolvimento web, focando em design responsivo.
+                </p>
+                <div class="buttons-back">
+                  <a
+                    href="https://capacitacao-tailwind.vercel.app/"
+                    target="_blank"
+                  >
+                    <button>
+                      <i class="fa-solid fa-eye"></i>
+                      <p>ver projeto</p>
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/Dionatan2019Rodrigues/capacitacao-tailwind"
+                    target="_blank"
+                  >
+                    <button>
+                      <i class="fa-solid fa-code"></i>
+                      <p>ver código</p>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-flip hidden">
+            <div class="flip">
               <div class="front project-portfolio">
                 <div class="icons-flip">
                   <i class="fa-brands fa-html5"></i>
@@ -198,7 +247,7 @@
               <div class="back">
                 <div class="top-back">
                   <h4>Portfólio</h4>
-                  <p class="data">início(16.12.2024) - fim(00.00.2024)</p>
+                  <p class="data">início(16.12.2024) - fim(18.02.2024)</p>
                 </div>
                 <p class="paragraph">
                   Neste projeto tive como principal objetivo demonstrar minhas
@@ -207,7 +256,10 @@
                   utilizando html, css e JavaScript.
                 </p>
                 <div class="buttons-back">
-                  <a href="https://dionatan2019rodrigues.github.io/portfolio-version-1.0/" target="_blank">
+                  <a
+                    href="https://dionatan2019rodrigues.github.io/portfolio-version-1.0/"
+                    target="_blank"
+                  >
                     <button>
                       <i class="fa-solid fa-eye"></i>
                       <p>ver projeto</p>
@@ -226,7 +278,7 @@
               </div>
             </div>
           </div>
-          <div class="container-flip hidden">
+          <div class="container-flip hidden-right">
             <div class="flip">
               <div class="front project-android">
                 <div class="icons-flip">
@@ -268,7 +320,7 @@
               </div>
             </div>
           </div>
-          <div class="container-flip hidden-right">
+          <div class="container-flip hidden">
             <div class="flip">
               <div class="front project-cordel">
                 <div class="icons-flip">
@@ -315,7 +367,9 @@
     </main>
 
     <footer id="footer">
-      <p class="hidden">&copy Desenvolvido por Dionatan</p>
+      <p class="hidden">
+        &copy Desenvolvido por <a class="dev" href="">Dionatan</a>
+      </p>
       <div class="contacts hidden-right">
         <a
           href="https://web.whatsapp.com/send?phone=55984268328"
