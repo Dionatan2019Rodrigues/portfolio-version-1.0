@@ -383,6 +383,10 @@ section.about .container-top {
   background-image: url(../assets/projects/p-portfolio.png);
   background-size: cover;
 }
+.project-links {
+  background-image: url(../assets/projects/p-links-dc.png);
+  background-size: cover;
+}
 .project-resort {
   background-image: url(../assets/projects/p-resort.png);
   background-size: cover;
